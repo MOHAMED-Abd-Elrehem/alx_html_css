@@ -68,7 +68,7 @@ header nav ul li a{
 
 main .banner{
     min-height: 100vh;
-    background-image: url(../image/Object.png);
+    background-image: url(../../../image/Object.png);
     background-size: cover;
     background-color: #1f2021;
     position: relative;
