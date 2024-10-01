@@ -1,0 +1,366 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Source Sans Pro;
+}
+
+@media (max-width: 431px){
+    header .container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+@media (min-width: 431px){
+    header .toggle-menu{
+        display: none;
+    }
+}
+@media (max-width: 431px){
+    header .container .img{
+        display: flex;
+        flex-basis: 70%;
+    }
+}
+@media (max-width: 431px){
+    header nav{
+        display: none;
+        position: absolute;
+        bottom: -140px;    
+    }
+}
+@media (max-width: 431px){
+    .container ul {
+        display: flex;
+        flex-direction: column;
+}
+    }
+@media (max-width: 431px){
+    .container ul li{
+        letter-spacing: 1px;
+        padding-bottom: 20px;
+}
+}
+@media (max-width: 431px){
+    .landing .container{
+        position: relative;
+    }
+}
+@media (max-width: 431px){
+    .landing .container .hero{
+        top: 225px;
+        left: 25px;
+        min-width: 90%;    
+    }
+}
+@media (max-width: 431px){
+    .What-we-do .main-head{
+        min-width: 90%;
+        line-height: 1.7;
+    }
+}
+@media (max-width: 431px){
+    .Our-results .main-head{
+        min-width: 90%;
+        line-height: 1.7;
+    }       
+}
+@media (max-width: 431px){
+    .Our-results .box .info{
+        left: 46.3px;
+    }
+}
+@media (max-width: 431px){
+    .Our-results .box .pentagon{
+        margin-left: 94.4px;
+    }
+}
+@media (max-width: 431px){
+    .contact-us .container form{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+}
+@media (max-width: 431px){
+    footer .container{
+        flex-direction: column;
+    }
+}
+@media (max-width: 431px){
+    footer .container .icons{
+        padding-top: 40px;
+    }
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1000px;
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+header .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header .toggle-menu{
+    font-size: 24px;
+    color: white;
+    position: relative;
+    padding: 0;
+    border-style: none;
+    background-color: inherit;
+    cursor: pointer;
+    transition: all .3s ease;
+} 
+.toggle-menu:hover::before ,
+.toggle-menu:hover + nav{
+    content: "\ea0f";
+    display: flex;
+    color: #FFFFFF;
+    font-size: 10px;
+}
+nav{
+    transition: all .1s 0s;
+}
+header .container ul{
+    display: flex;
+}
+header .container ul li{
+    padding-right: 20px;
+}
+header .container ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+}
+.landing{
+    min-height: 100vh;
+    position: relative;
+    background-image: url(../../images/headphones_hero_1.jpg);
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+}
+.landing .container .hero{
+    bottom: 42px;
+    position: absolute;
+    right: 234px;
+    max-width: 60%;
+}
+.landing .container{
+    
+    max-width: 100%;
+}
+.landing .container .hero .main-head{
+    padding-bottom: 40px;
+    color: white;
+}
+.landing .container .hero .main-head h1{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: auto;
+}
+.landing .container .hero .main-head p{
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: auto;
+}
+.landing .container .hero button{
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    background-color: #FF6565;
+    width: 200px;
+    height: 45px;
+    border-radius: 30px;
+    border-style: none;
+}
+.landing .container .hero .block-text p{
+    font-size: 16px;
+    padding-top: 50px;
+    color: white;
+    line-height: 25px;
+}
+
+.What-we-do{
+    text-align: center;
+}
+.What-we-do .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) ; 
+    gap: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.What-we-do .container .box{
+    position: relative;
+    transition: .3s;
+}
+.What-we-do .container .box:hover{
+    transform: translateY(-10px);
+}
+.What-we-do .main-head{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+}
+.What-we-do .main-head h1{
+    font-size: 32px;
+}
+.What-we-do .main-head p{
+    font-size: 16px;
+}
+.What-we-do .container i{
+    font-size: 100px;
+    color: #FF6565;
+}
+
+.Our-results{
+    background-image: url(../../images/headphones_hero_2.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.Our-results .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) ; 
+    gap: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.Our-results .main-head{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+}
+.Our-results .main-head h1{
+    font-size: 32px;
+    color: white;
+    padding-bottom: 30px;
+}
+.Our-results .main-head p{
+    font-size: 16px;
+    color: white;
+}
+.Our-results .box {
+    position: relative;
+    transition: .3s;
+}
+.Our-results .container .box:hover{
+    transform: translateY(-10px);
+}
+.Our-results .box .info{
+    position: absolute;
+    top: 5px;
+    right: 60.25px;
+}
+.Our-results .box .pentagon{
+    width: 190px;
+    height: 190px;
+    background-color: #FF6565;
+    clip-path: polygon(50% 0%, 100% 38.2%, 81.8% 100%, 18.2% 100%, 0% 38.2%);
+}
+.Our-results .info h3{
+    font-size: 46px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: auto;
+}
+.Our-results .info p{
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+}
+
+.contact-us{
+    text-align: center;
+}
+.contact-us .main-head{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+}
+.contact-us .main-head h1{
+    font-size: 32px;
+    padding-bottom: 50px;
+}
+.contact-us .container{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.contact-us .container form{
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+}
+.contact-us .container form input{
+    border-style: none;
+    border-bottom: 1px solid #979797;
+    padding-bottom: 0px;
+}
+.contact-us .container form label{
+    text-align: start;
+}
+.contact-us .container form label:not(:first-child){
+    padding-top: 40px;
+}
+.contact-us .container button{
+    padding: 13px 31px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #FF6565;
+    margin-top: 64px;
+    border-style: none;
+    color: white;
+    border-radius: 30px;
+}
+
+footer{
+    background-color: #071629;
+    text-align: center;
+
+}
+footer .container{
+    padding-bottom: 50px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .container img{
+    width: 160px;
+}
+footer .container .icons i{
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 50%;
+    color: white;
+}
+footer p{
+    color: #FFFFFF;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
